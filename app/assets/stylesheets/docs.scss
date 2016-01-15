@@ -3,6 +3,13 @@ $red: #cf726e;
 $green: #5bc89e;
 $white: #f0f0f0;
 
+$code-black: #202020;
+$code-white: #e0e0dc;
+$code-green: #b0bf82;
+$code-blue: #8fbdcc;
+$code-yellow: #f8d29d;
+$code-red: #b95c56;
+
 html,
 body {
   font-family: 'Lato', serif;
@@ -32,7 +39,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  width: 61em;
+  width: 60em;
 
   .sidebar {
     float: left;
@@ -68,26 +75,18 @@ code {
   padding: 0.4em 0.2em 0;
 
   &.hljs {
-    $black: #202020;
-    $white: #e0e0dc;
-    $green: #b0bf82;
-    $blue: #8fbdcc;
-    $cyan: #b95c56;
-    $yellow: #f8d29d;
-    $red: #b95c56;
-
-    background-color: $black;
-    color: $white;
+    background-color: $code-black;
+    color: $code-white;
     padding-left: 1rem;
 
-    .hljs-string { color: $green; }
-    .hljs-constant { color: $blue; }
-    .hljs-symbol { color: $cyan; }
-    .hljs-keyword { color: $yellow; }
+    .hljs-string { color: $code-green; }
+    .hljs-constant { color: $code-blue; }
+    .hljs-symbol { color: $code-red; }
+    .hljs-keyword { color: $code-yellow; }
 
     .hljs-title,
-    .hljs-parent { color: $blue; }
+    .hljs-parent { color: $code-blue; }
 
-    .hljs-tag { color: $yellow; }
+    .hljs-tag { color: $code-yellow; }
   }
 }

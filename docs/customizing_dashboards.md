@@ -13,7 +13,7 @@ class CustomerDashboard < Administrate::Dashboard::Base
     id: Field::Integer,
     name: Field::String,
     email: Field::String,
-    created_at: Field:::DateTime,
+    created_at: Field::DateTime,
     updated_at: Field::DateTime,
     orders: Field::HasMany,
   }
